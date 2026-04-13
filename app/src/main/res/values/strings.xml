@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ALTOINDO</string>
@@ -7,3 +8,9 @@
         <item>Bank</item>
     </string-array>
 </resources>
+=======
+<resources>
+    <string name="app_name">ALTOINDO</string>
+    <string name="welcome_msg">Selamat Datang di Altoindo</string>
+</resources>
+>>>>>>> 255cf0eca7c683250211d8dc40b5a22fa4b71580
