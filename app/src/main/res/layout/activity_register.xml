@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/et_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama lengkap"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor ponsel"
+            android:inputType="phone"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buat Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_upline_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID UPLINE (opsional)"
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Rekening"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_account_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rb_ewallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ewallet" />
+
+            <RadioButton
+                android:id="@+id/rb_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/ewallet_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="8dp">
+
+            <Spinner
+                android:id="@+id/sp_ewallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="Pilih Ewallet" />
+
+            <EditText
+                android:id="@+id/et_ewallet_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama pemilik ewallet"
+                android:inputType="textPersonName"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/et_ewallet_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor ewallet"
+                android:inputType="phone"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bank_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/et_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama bank"
+                android:inputType="text"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/et_bank_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama pemilik rekening"
+                android:inputType="textPersonName"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/et_bank_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor rekening"
+                android:inputType="phone"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tv_go_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun? Login"
+            android:gravity="center"
+            android:textColor="#0057D9"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelola Bonus & Komisi"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_invite_bonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bonus Afiliasi Undang Member (%)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_checkin_bonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bonus Checkin Harian (%)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_sponsor_bonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bonus Kunjungi Sponsor (%)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_video_bonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bonus Tonton Video (%)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_save_bonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Bonus"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
